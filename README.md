@@ -18,6 +18,7 @@ Simply run the following in this directory:
 ```bash
 vagrant up
 docker compose up -d
+run http://0.0.0.0:80
 ```
 
 # MySQL 
@@ -31,7 +32,15 @@ Port: 3306
 User: root
 Pass: myRootPassword123
 ```
-
+## debug
+```
+docker ps
+docker exec -it --user root <containerIdOfMysql> bash
+docker inspect <containerIdOfMysql>
+```
+### look for "IPAddress" in json
+### put the "IPAddress" in grafana
+  
 # MySQL Metrics
 
 In order to provide this info in a fancy way, I've hooked in grafana and set it up with the percona dashboards to visualize the info.  You can access the info here:
@@ -57,10 +66,4 @@ The way that this vagrant instance is set up is by installing docker on the vagr
 
 This repo is consciously designed to have two separate aspects of the setup (docker + ansible within vagrant), for 2 reasons: the grafana docker image doesn't contain much by way of configuration of the dashboards/users, and, that it should not be used as a production service.  It should be broken down into its separate components based on your desired infrastructure.  This is just a demo to get you up and running quickly. 
 
-# debug
-docker ps
-docker exec -it --user root <containerIdOfMysql> bash
-docker inspect <containerIdOfMysql>
-look for "IPAddress" in json
-  put the "IPAddress" in grafana
-
+ 
