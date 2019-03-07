@@ -17,6 +17,7 @@ Simply run the following in this directory:
 
 ```bash
 vagrant up
+docker compose up -d
 ```
 
 # MySQL 
@@ -24,6 +25,7 @@ vagrant up
 Simple install that can be accessed via:
 
 ```
+mysql.server start
 Host: 192.168.33.10
 Port: 3306
 User: root
@@ -54,3 +56,11 @@ The way that this vagrant instance is set up is by installing docker on the vagr
 # Design decision
 
 This repo is consciously designed to have two separate aspects of the setup (docker + ansible within vagrant), for 2 reasons: the grafana docker image doesn't contain much by way of configuration of the dashboards/users, and, that it should not be used as a production service.  It should be broken down into its separate components based on your desired infrastructure.  This is just a demo to get you up and running quickly. 
+
+# debug
+docker ps
+docker exec -it --user root <containerIdOfMysql> bash
+docker inspect <containerIdOfMysql>
+look for "IPAddress" in json
+  put the "IPAddress" in grafana
+
