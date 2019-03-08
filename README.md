@@ -18,6 +18,7 @@ Simply run the following in this directory:
 ```bash
 vagrant up
 docker compose up -d
+run http://0.0.0.0:32773
 run http://0.0.0.0:80
 ```
 
