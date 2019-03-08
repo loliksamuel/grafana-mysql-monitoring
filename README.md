@@ -52,6 +52,7 @@ b15668695d0f        grafana/grafana               "/run.sh"                16 mi
 15.  alter user 'root' identified with mysql_native_password by '123';
 16.  exit
 17. try connecting again in grafana
+18. add graphs according to grafana/sql.sql
 ```
 
 # MySQL 
