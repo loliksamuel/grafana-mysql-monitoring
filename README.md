@@ -21,11 +21,14 @@ vagrant status
 docker compose up -d
 
 docker ps
-CONTAINER ID        IMAGE                         COMMAND                  CREATED              STATUS              PORTS                                NAMES
-f85a5e1060f6        prom/mysqld-exporter:latest   "/bin/mysqld_exporter"   About a minute ago   Up 9 seconds        0.0.0.0:9104->9104/tcp               mysql_exporter8
-e89ddb1b090e        prom/prometheus               "/bin/prometheus --c…"   15 minutes ago       Up 15 minutes       0.0.0.0:9090->9090/tcp               prometheus8
-b15668695d0f        grafana/grafana               "/run.sh"                16 minutes ago       Up 16 minutes       0.0.0.0:3000->3000/tcp               grafana8
-3c0f88cffc07        mysql:latest                  "docker-entrypoint.s…"   15 minutes ago       Up 10 minutes       33060/tcp, 0.0.0.0:53306->3306/tcp   mysql8
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                NAMES
+44072be91710        google/cadvisor:latest        "/usr/bin/cadvisor -…"   17 minutes ago      Up 17 minutes       8080/tcp, 0.0.0.0:8082->8082/tcp     cadvisor8
+ce0ae14737c1        prom/node-exporter            "/bin/node_exporter …"   17 minutes ago      Up 17 minutes       0.0.0.0:9100->9100/tcp               node-exporter8
+6769c275f72e        basi/socat                    "/bin/sh -c 'socat -…"   17 minutes ago      Up 17 minutes       0.0.0.0:4999->4999/tcp               engine-proxy8
+2d7703f2be0a        prom/prometheus               "/bin/prometheus --c…"   5 hours ago         Up 11 minutes       0.0.0.0:9090->9090/tcp               prometheus8
+e460cf534c16        grafana/grafana               "/run.sh"                5 hours ago         Up 17 minutes       0.0.0.0:3000->3000/tcp               grafana8
+f85a5e1060f6        prom/mysqld-exporter:latest   "/bin/mysqld_exporter"   5 hours ago         Up 17 minutes       0.0.0.0:9104->9104/tcp               mysql_exporter8
+3c0f88cffc07        mysql:latest                  "docker-entrypoint.s…"   5 hours ago         Up 17 minutes       33060/tcp, 0.0.0.0:53306->3306/tcp   mysql8
 
 ## Browse node-exporter
 1. Open browser : http://localhost:9100/
