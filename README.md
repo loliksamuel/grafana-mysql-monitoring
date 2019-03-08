@@ -17,6 +17,7 @@ Simply run the following in this directory:
 
 ```bash
 vagrant up
+vagrant status
 docker compose up -d
 
 docker ps
@@ -26,17 +27,14 @@ e89ddb1b090e        prom/prometheus               "/bin/prometheus --c…"   15 
 b15668695d0f        grafana/grafana               "/run.sh"                16 minutes ago       Up 16 minutes       0.0.0.0:3000->3000/tcp               grafana8
 3c0f88cffc07        mysql:latest                  "docker-entrypoint.s…"   15 minutes ago       Up 10 minutes       33060/tcp, 0.0.0.0:53306->3306/tcp   mysql8
 
-1. run MySQLd exporter
-2. http://0.0.0.0:9104
-3. see MySQLd exporter
+1. run MySQLd exporter http://0.0.0.0:9104
+2. see MySQLd exporter
 4. see metrics
-5. run prometheus
-6. run http://0.0.0.0:9090
+5. run prometheus http://0.0.0.0:9090
 7. click status
 8. click targets
 9. verify all up
-10. run grafana
-11 run http://0.0.0.0:3000
+10. run grafana http://0.0.0.0:3000
 1. add datasource prometheus
 2. set name prometheus
 3. set url=http://prometheus:9090/
