@@ -51,6 +51,8 @@ Host: 0.0.0.0
 Port: 53306
 User: root
 Pass: 123
+run db_schema.sql
+run db_data.sql
 ```
   
 # MySQL Metrics
