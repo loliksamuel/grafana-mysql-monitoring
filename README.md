@@ -27,14 +27,37 @@ e89ddb1b090e        prom/prometheus               "/bin/prometheus --c…"   15 
 b15668695d0f        grafana/grafana               "/run.sh"                16 minutes ago       Up 16 minutes       0.0.0.0:3000->3000/tcp               grafana8
 3c0f88cffc07        mysql:latest                  "docker-entrypoint.s…"   15 minutes ago       Up 10 minutes       33060/tcp, 0.0.0.0:53306->3306/tcp   mysql8
 
-1. run MySQLd exporter http://0.0.0.0:9104
+## Browse node-exporter
+1. Open browser : http://localhost:9100/
+2. click metrics
+3. refresh and see the change values
+
+## Browse MySQLd exporter
+1. Open browser : http://0.0.0.0:9104
 2. see MySQLd exporter
-4. see metrics
-5. run prometheus http://0.0.0.0:9090
-7. click status
-8. click targets
-9. verify all up
-10. run grafana http://0.0.0.0:3000
+3. see metrics
+4. refresh and see the change values
+
+## Browse Prometheus - leading open source software for scraping/querying/graphing/monitoring/alerting timeseries data(built at SoundCloud in 2012)(prometheus.io)
+1. Open your browser :  http://localhost:9090 
+2. click Status > Targets 
+3. click Status > Rule 
+  - Alerting rules are configured in Prometheus in the same way as recording rules.
+  - An example rules file with an alert would be:   
+3. validate that Prometheus can reach (State up) only 2 out of the 4 targets we told it to poll (in prometheus.yml)
+4. click Graph to see the build-in graph visualization
+5. see a long list of metrics in the drop-down. (These metrics are coming from the container named "node exporter" which produces OS-level metrics for Prometheus to poll)
+6. choose a metrics
+7. click execute 
+8. click console
+9. click graph
+10. choose 15m
+11. add formula in textbox above (*10 for instance)
+12. refresh every minute to see a change.
+13. repeat few times 6-10
+
+## Browse grafana
+0. Open browser : http://0.0.0.0:3000
 1. add datasource prometheus
 2. set name prometheus
 3. set url=http://prometheus:9090/
