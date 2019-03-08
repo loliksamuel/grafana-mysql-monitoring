@@ -86,7 +86,7 @@ run db_schema.sql
 run db_data.sql
 ```
   
-# MySQL Metrics
+# MySQL Metrics 
 
 In order to provide this info in a fancy way, I've hooked in grafana and set it up with the percona dashboards to visualize the info.  You can access the info here:
 
