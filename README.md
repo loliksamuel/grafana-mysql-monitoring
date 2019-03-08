@@ -32,14 +32,15 @@ Port: 3306
 User: root
 Pass: myRootPassword123
 ```
-#### debug
+#### problem shooting mysql docker
 ```
 docker ps
-docker exec -it --user root <containerIdOfMysql> bash
 docker inspect <containerIdOfMysql>
+look for "IPAddress" in json
+put the "IPAddress" in grafana
+look for #### "Destination": "/var/lib/mysql"
+docker exec -it --user root <containerIdOfMysql> bash
 ```
-#### look for "IPAddress" in json
-#### put the "IPAddress" in grafana
   
 # MySQL Metrics
 
