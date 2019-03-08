@@ -40,6 +40,42 @@ services:
     depends_on:
       - mysql8
 
+
+
+  node-exporter8:
+    image: prom/node-exporter
+    container_name: node-exporter8
+    ports:
+      - 9100:9100
+    volumes:
+      - /proc:/host/proc
+      - /sys:/host/sys
+      - /:/rootfs
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.sysfs=/host/sys"
+      - "--collector.textfile.directory=/etc/node-exporter/"
+      - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
+
+
+  cadvisor8:
+      image: google/cadvisor:latest
+      container_name: cadvisor8
+      ports:
+        - '8082:8082'
+      volumes:
+        - '/:/rootfs'
+        - '/var/run:/var/run'
+        - '/sys:/host/sys'
+        - '/var/lib/docker:/var/lib/docker'
+
+  engine-proxy8:
+    image: basi/socat
+    container_name: engine-proxy8
+    ports:
+      - 4999:4999
+
+
 #  mysqld_exporter_high_res:
 #    image: prom/mysqld-exporter:latest
 #    container_name: mysql_exporter_hres
