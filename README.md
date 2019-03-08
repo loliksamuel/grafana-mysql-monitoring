@@ -30,16 +30,27 @@ mysql.server start
 Host: 192.168.33.10
 Port: 3306
 User: root
-Pass: myRootPassword123
+Pass: 123
 ```
-#### problem shooting mysql docker
+#### mysql problem shooting 
 ```
 docker ps
-docker inspect <containerIdOfMysql>
+docker logs mysql8
+dokcer rm mysql8 -f
+docker run --name mysql8 -d -e MYSQL_ROOT_PASSWORD=123 -p 53306:3306 mysql:latest
+docker inspect mysql8
 look for "IPAddress" in json
 put the "IPAddress" in grafana
 look for #### "Destination": "/var/lib/mysql"
-docker exec -it --user root <containerIdOfMysql> bash
+docker exec -it --user root mysql8 bash
+mysql --user=root --password=123
+alter user 'root' identified with mysql_native_password by '123';
+exit
+open mysql workbench
+Host: 0.0.0.0
+Port: 53306
+User: root
+Pass: 123
 ```
   
 # MySQL Metrics
