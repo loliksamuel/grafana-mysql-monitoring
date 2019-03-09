@@ -21,6 +21,16 @@ services:
       - '3000:3000'
     environment:
       GF_INSTALL_PLUGINS: percona-percona-app
+    volumes:
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+#       - ./entrypoint.sh:/app/entrypoint.sh
+#       - ./grafana/dashboards:/var/lib/grafana/dashboards
+#       - ./grafana/datasources:/etc/grafana/datasources
+#       - ./grafana/plugins:/var/lib/grafana/plugins
+#       - grafana_data:/var/lib/grafana      
+#    entrypoint:
+#      - sh /app/entrypoint.sh
+
 
   # tool to connect to mysql instance, and allow prometheus to collect mysql stats
   mysql_exporter8:
