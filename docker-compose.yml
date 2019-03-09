@@ -28,7 +28,7 @@ services:
       - ./grafana/dashboards:/var/lib/grafana/dashboards
       - ./grafana/datasources:/etc/grafana/datasources
 #       - ./entrypoint.sh:/app/entrypoint.sh
-#       - ./grafana/plugins:/var/lib/grafana/plugins
+      -./grafana/plugins:/var/lib/grafana/plugins
 #       - grafana_data:/var/lib/grafana      
 #    entrypoint:
 #      - sh /app/entrypoint.sh
