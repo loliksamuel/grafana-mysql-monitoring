@@ -1,6 +1,8 @@
 version: '3.2'
-services:
+volumes:
+    grafana_data: {}
 
+services:
   # simple myself setup
   mysql8:
     image: mysql:latest
