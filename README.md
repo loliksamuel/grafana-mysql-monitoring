@@ -74,6 +74,10 @@ f85a5e1060f6        prom/mysqld-exporter:latest   "/bin/mysqld_exporter"   5 hou
 9. set User: root
 10. set Pass: 123
 11. connect
+12. if failed
+13. docker inspect mysql8
+14. look for "IPAddress" in json
+15, put the "IPAddress" in grafana
 12. if u got 'this authentication plugin is not supported'
 13. docker exec -it --user root mysql8 bash
 14.  mysql --user=root --password=123
