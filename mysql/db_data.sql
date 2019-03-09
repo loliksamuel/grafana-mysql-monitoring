@@ -86,7 +86,7 @@ INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-08-16 
 INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-09-16 19:57:00', 'Metric B', 12480, 10);
 
 
-INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-10-16 19:56:00', 'Metric B', 12480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2019-02-16 19:56:00', 'Metric B', 12480, 10000);
 INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-11-16 19:32:00', 'Metric A', 4620, 6);
 INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-12-16 19:32:00', 'Metric B', 4490, 11);
 INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2019-01-16 19:57:00', 'Metric A', 3140, 25);
