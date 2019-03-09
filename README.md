@@ -79,6 +79,7 @@ f85a5e1060f6        prom/mysqld-exporter:latest   "/bin/mysqld_exporter"   5 hou
 16.  exit
 17. try connecting again in grafana
 18. add graphs according to grafana/sql.sql
+19. vagrant destroy
 ```
 
 # MySQL 
