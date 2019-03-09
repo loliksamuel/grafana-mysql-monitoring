@@ -86,6 +86,11 @@ f85a5e1060f6        prom/mysqld-exporter:latest   "/bin/mysqld_exporter"   5 hou
 16.  exit
 17. try connecting again in grafana
 18. add graphs according to grafana/sql.sql
+19. docker exec -it --user root grafana8 bash
+20. grafana-cli plugins install grafana-worldmap-panel
+21. exit
+22. docker restart grafana8
+23. add panel worldMap
 19. vagrant destroy
 ```
 
