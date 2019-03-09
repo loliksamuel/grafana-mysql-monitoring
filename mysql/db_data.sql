@@ -39,4 +39,57 @@ INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 
 INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 13:55:00', 'Metric A', 14, 25);
 INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 13:55:00', 'Metric B', 48, 10);
 
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:30:00', 'Metric A', 620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:30:00', 'Metric B', 490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:55:00', 'Metric A', 140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:55:00', 'Metric B', 480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:30:00', 'Metric A', 620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:30:00', 'Metric B', 490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:55:00', 'Metric A', 140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 17:55:00', 'Metric B', 480, 10);
+
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:30:00', 'Metric A', 620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:30:00', 'Metric B', 490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:55:00', 'Metric A', 140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:55:00', 'Metric B', 480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:30:00', 'Metric A', 620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:30:00', 'Metric B', 490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:55:00', 'Metric A', 140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 18:55:00', 'Metric B', 480, 10);
+
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:31:00', 'Metric A', 620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:31:00', 'Metric B', 490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:56:00', 'Metric A', 140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:56:00', 'Metric B', 480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:32:00', 'Metric A', 620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:32:00', 'Metric B', 490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:57:00', 'Metric A', 140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-03-15 19:57:00', 'Metric B', 480, 10);
+
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-05-15 19:56:00', 'Metric B', 22480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-06-15 19:32:00', 'Metric A', 22620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-07-15 19:32:00', 'Metric B', 22490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-08-15 19:57:00', 'Metric A', 22140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-09-15 19:57:00', 'Metric B', 22480, 10);
+
+
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-10-15 19:56:00', 'Metric B', 22480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-11-15 19:32:00', 'Metric A', 22620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-12-15 19:32:00', 'Metric B', 22490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2019-01-15 19:57:00', 'Metric A', 22140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2019-03-09 19:57:00', 'Metric B', 22480, 10);
+
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-05-16 19:56:00', 'Metric B', 12480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-06-16 19:32:00', 'Metric A', 12620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-07-16 19:32:00', 'Metric B', 2490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-08-16 19:57:00', 'Metric A', 12140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-09-16 19:57:00', 'Metric B', 12480, 10);
+
+
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-10-16 19:56:00', 'Metric B', 12480, 10);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-11-16 19:32:00', 'Metric A', 4620, 6);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2018-12-16 19:32:00', 'Metric B', 4490, 11);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2019-01-16 19:57:00', 'Metric A', 3140, 25);
+INSERT metric_values (time, measurement, valueOne, valueTwo) VALUES('2019-03-10 19:57:00', 'Metric B', 1480, 10);
+
 select * from metric_values;
