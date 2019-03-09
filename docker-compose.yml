@@ -25,9 +25,9 @@ services:
       GF_INSTALL_PLUGINS: percona-percona-app
     volumes:
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - ./grafana/datasources:/etc/grafana/datasources
 #       - ./entrypoint.sh:/app/entrypoint.sh
-#       - ./grafana/dashboards:/var/lib/grafana/dashboards
-#       - ./grafana/datasources:/etc/grafana/datasources
 #       - ./grafana/plugins:/var/lib/grafana/plugins
 #       - grafana_data:/var/lib/grafana      
 #    entrypoint:
